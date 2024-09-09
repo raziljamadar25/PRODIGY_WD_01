@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web page</title>
+    <link rel="stylesheet" href="PRODIGY_WD_01.css">
+</head>
+<body>
+    <nav class="navbar">
+        <p class="nav-text">Sneaker Street</p>
+        <ul class="nav-link">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="home"></section>
+        <div class="background-image">
+            <div class="about"><section id="about"><h1><strong>About</strong></h1>
+                <img class="about-img" src="./images/about.jpg" alt="No image found" />
+                <p class="about-text">Welcome to <strong>Sneaker Street</strong>, where style meets comfort.
+                    Discover our curated collection of shoes for every occasion, designed with both 
+                    fashion and function in mind. Whether you're searching for the perfect pair of sneakers
+                    for your daily adventures, elegant heels for a night out, or durable boots for your outdoor
+                    escapades, we've got you covered.</p>
+            </div>
+        </section>
+        <section id="service"><h1><strong>What we service offer?</strong></h1><p class="service-text">At <strong>Sneaker Street</strong>, we believe that the 
+            right pair of shoes can elevate any outfit and provide the comfort and support you need throughout
+             your day. Our online store offers a curated collection of footwear to suit every style, occasion,
+              and preference.
+         </p></section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p class="contact-text">Crafted by<strong> Mo raza Kharodiya</strong></p>
+        </section>
+    </div>
+</div>
+
+    <script>
+        function handleScroll() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) { 
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+</html>
